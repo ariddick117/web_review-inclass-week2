@@ -1,7 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
+BASIC RESET START*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,7 +31,9 @@ footer, header, hgroup, menu, nav, section
 	display: block;
 }
 
-/*Content Start */
+/*BASIC RESET ENDS*/
+
+/*SITE TAGS START*/
 
 body 
 {
@@ -49,8 +50,8 @@ blockquote, q
 	quotes: none;
 }
 
-blockquote: before, blockquote: after,
-q: before, q: after 
+blockquote:before, blockquote:after,
+q:before, q:after 
 {
 	content: '';
 	content: none;
@@ -60,4 +61,49 @@ table
 {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* ADDING SITE STYLES HERE - THIS FOR FOR THE HEADER */
+
+.hidden
+{
+	display: none;
+}
+
+main
+{
+	width: 960px;
+	padding: 0 10px 10px 0;
+	margin: 0 auto;
+	/* border is temp -> just to see dimensions of site */
+	border: thin dashed #333;
+}
+
+#main-header
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#main-nav
+{
+	height: 40px;
+	width: 290px;
+	background-color: #555434;
+	margin-bottom: 20px;
+}
+
+#sub-nav
+{
+	height: 40px;
+	width: 650px;
+	background-color: #23550b;
+}
+
+#logo
+{
+	margin-left: auto;
+	height: 100px;
+	width: 250px;
+	background-color: #f0aeae;
 }
