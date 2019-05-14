@@ -1,17 +1,109 @@
-* 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+
+BASIC RESET START*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
 {
-	border: none;
-	padding: 0;
 	margin: 0;
-
-	box-sizing: border-box;
-
-	list-style-type: none;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-body
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
 {
-	color: black;
-	font-family: 'helvetica', sans-serif;
-	font-size: 16px;
+	display: block;
+}
+
+/*basic reset end*/
+
+/*SITE TAGS START*/
+
+body 
+{
+	line-height: 1;
+}
+
+ol, ul 
+{
+	list-style: none;
+}
+
+blockquote, q 
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ADDING SITE STYLES HERE - THIS FOR FOR THE HEADER */
+
+.hidden
+{
+	display: none;
+}
+
+main
+{
+	width: 960px;
+	padding: 0 10px 10px 0;
+	margin: 0 auto;
+	/* border is temp -> just to see dimensions of site */
+	border: thin dashed #333;
+}
+
+#main-header
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#main-nav
+{
+	height: 40px;
+	width: 290px;
+	background-color: #555434;
+	margin-bottom: 20px;
+}
+
+#sub-nav
+{
+	height: 40px;
+	width: 650px;
+	background-color: #23550b;
+}
+
+#logo
+{
+	margin-left: auto;
+	height: 100px;
+	width: 250px;
+	background-color: #f0aeae;
 }
